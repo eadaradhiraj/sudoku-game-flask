@@ -5,6 +5,7 @@ app = Flask(__name__)
 su = Sudoku()
 
 
+@app.route('/')
 @app.route('/board')
 def board():
     su.set_problem()

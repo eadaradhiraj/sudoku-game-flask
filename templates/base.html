@@ -48,6 +48,9 @@
 
             return result
         }
+        $('#sudoku-new').click(function () {
+            location.reload();
+        })
         $('#sudoku-check').click(function () {
             var data = table_to_array('sudoku-matrix')
             $.ajax({
